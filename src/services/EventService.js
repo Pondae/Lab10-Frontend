@@ -22,7 +22,7 @@ export default {
   },
   getEventByKeyword(keyword, perPage, page) {
     return apiClient.get(
-      'events?_limit=' + perPage + '&_page=' + page + '&title=' + keyword
+      'auctionItems?_limit=' + perPage + '&_page=' + page + '&description=' + keyword
     )
   }
 }
